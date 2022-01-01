@@ -44,6 +44,6 @@ alias grs="git restore"
 
 # Sources
 #  Syntax Highlighting
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh/plugins/zsh-syntax-highlighting.zsh
 #  Git config
 source /usr/share/zsh/plugins/git-prompt.sh
