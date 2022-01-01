@@ -8,5 +8,6 @@ __This repo has config file for:__
 
 __Some dependencies can be found here:__
 - [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
+> Put this file in /usr/share/zsh/plugins or you can edit the 'source' statement inside '.zshrc'
 - [zsh git-prompt](https://github.com/git/git/blob/master/contrib/completion/git-prompt.sh)
-> Put these two files in /usr/share/zsh/plugins or you can edit the 'source' statement inside '.zshrc'
+> follow the [INSTALL.md](https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md) then 'cp' the 'zsh-syntax-highlighting' directory inside src/ directory to /usr/share/zsh/plugins
