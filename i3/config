@@ -170,5 +170,8 @@ bindsym $mod+r mode "resize"
 # Restore Nitrogen background
 exec nitrogen --restore &
 
+# Picom
+exec --no-startup-id picom -CGb
+
 # Polybar launch script
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
