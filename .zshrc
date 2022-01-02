@@ -25,6 +25,8 @@ bindkey '^e' edit-command-line
 alias sc="source ~/.zshrc"
 alias ls="ls -lGh --color=auto"
 alias la="ls -lGhA --color"
+alias lsd="ls -lGh --color -d"
+alias lad="ls -lGhA --color -d"
 alias grep="grep -Hnr"
 #  Git Aliases
 alias gs="git status"
