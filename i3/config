@@ -43,8 +43,8 @@ bindsym $mod+Return exec kitty
 bindsym $mod+q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec --no-startup-id dmenu_run
-bindsym $mod+c exec --no-startup-id dmenu_run -c
+bindsym $mod+d exec --no-startup-id dmenu_run -h 27
+bindsym $mod+c exec --no-startup-id dmenu_run -c -l 5
 
 # change focus
 bindsym $mod+h focus left
