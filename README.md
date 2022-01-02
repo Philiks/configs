@@ -6,6 +6,11 @@ I am not a linux geek let alone an Arch expert so take my config files with a gr
 - vim
 - tmux
 - dmenu
+- polybar
+- picom
+- neofetch
+- kitty
+- i3
 > My `i3` uses `dmenu` as the dynamic menu (basically a launcher for all menu-items i.e. `firefox`). You can launch `dmenu` using `Mod3 + d` (Mod4 is the super key). `dmenu` is in another repository just clone [this](https://github.com/Philiks/dmenu.git) or you can build your own by applying different patches from [here](https://tools.suckless.org/dmenu/patches/). 
 
 ## Dependencies
