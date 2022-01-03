@@ -167,6 +167,12 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
+# Screenshot key bindings
+bindsym --release Print exec escrotum '~/Pictures/%Y-%m-%d-%H%M%S_$wx.png'
+bindsym --release Shift+Print exec escrotum '~/Pictures/%Y-%m-%d-%H%M%S_$wx.png' -s
+bindsym --release $mod+Print exec escrotum '~/Pictures/%Y-%m-%d-%H%M%S_$wx.png' -C
+bindsym --release $mod+Shift+Print exec escrotum '~/Pictures/%Y-%m-%d-%H%M%S_$wx.png' -sC
+
 # Restore Nitrogen background
 exec nitrogen --restore &
 

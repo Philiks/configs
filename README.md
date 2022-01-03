@@ -22,7 +22,7 @@ Follow the [INSTALL.md](https://github.com/zsh-users/zsh-syntax-highlighting/blo
 ### For Polybar
 Put the `launch.sh` and `config` under `.config/polybar`.
 **[siji-ng](https://aur.archlinux.org/packages/siji-ng/)**<br />
-This siji font fixes the `warn: Dropping unmatched character `. Install this package from AUR if you're using Arch or Arch-based distro.
+This siji font fixes the `warn: Dropping unmatched character `. Install this package from AUR if you're using Arch or Arch-based distro.<br /><br />
 **[fontawesome-free-5.15.4.zip](https://use.fontawesome.com/releases/v5.15.4/fontawesome-free-5.15.4-desktop.zip)**<br />
 This is the fontawesome zip file. Run `$ unzip fontawesome-free-5.15.4-desktop.zip` to extract the compressed file. Then run:
 ```
@@ -32,3 +32,6 @@ $ sudo mv ./fontawesome-free-5.15.4-desktop/otfs/Font\ Awesome\ 5\ Free-Regular-
 $ sudo mv ./fontawesome-free-5.15.4-desktop/otfs/Font\ Awesome\ 5\ Free-Solid-900.otf /usr/share/fonts/OTF
 ```
 > Note that you must have `unzip` to decompress the zip file. Although you can still use other decompresser package.
+### For i3
+**[escrotum](https://github.com/Roger/escrotum)**<br />
+Install this from the AUR or follow their [installation](https://github.com/Roger/escrotum#install) guide.
