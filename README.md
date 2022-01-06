@@ -16,9 +16,11 @@ I am not a linux geek let alone an Arch expert so take my config files with a gr
 ## Dependencies
 ### For zsh
 **[zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)**<br />
-Put this file in /usr/share/zsh/plugins or you can edit the `source` statement inside `.zshrc`<br /><br />
+Put this file in /usr/share/zsh/plugins or you can edit the `source` statement inside `.zshrc`.<br /><br />
 **[zsh git-prompt](https://github.com/git/git/blob/master/contrib/completion/git-prompt.sh)**<br />
-Follow the [INSTALL.md](https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md) then `cp` the `zsh-syntax-highlighting` directory inside src/ directory to /usr/share/zsh/plugins
+Follow the [INSTALL.md](https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md) then `cp` the `zsh-syntax-highlighting` directory inside src/ directory to /usr/share/zsh/plugins.<br /><br />
+**[imagemagick](https://imagemagick.org/script/download.php)** or for **[arch-based distros](https://archlinux.org/packages/?name=imagemagick)**<br />
+You should also have `kitty` for `alias icat` to work.
 ### For Polybar
 Put the `launch.sh` and `config` under `.config/polybar`.
 **[siji-ng](https://aur.archlinux.org/packages/siji-ng/)**<br />

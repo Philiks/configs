@@ -43,6 +43,8 @@ alias gm="git merge"
 alias grh="git reset --hard"
 alias grm="git rm"
 alias grs="git restore"
+# For Kitty terminal + ImageMagick
+alias icat="kitty +kitten icat"
 
 # Sources
 #  Syntax Highlighting
