@@ -17,16 +17,18 @@
 ;==========================================================
 
 [colors]
-background = #b3262c3a
+background = #b5edfc
 background-alt = #262c3a
-foreground = #dfdfdf
-foreground-alt = #555
+foreground = #262c3a
+foreground-alt = #b5edfc
 primary = #b5edfc
 secondary = #e60053
 alert = #bd2c40
 alert-alt = #ffb52a
 low = #b5edfc
 low-alt = #7fa5b0
+green = #98f1dd
+peach = #ebd7ce
 
 [bar/example]
 ;monitor = ${env:MONITOR:HDMI-1}
@@ -36,11 +38,12 @@ height = 27
 ;offset-y = 1%
 radius = 10.0
 fixed-center = false
+transparent = true
 
 background = ${colors.background}
 foreground = ${colors.foreground}
 
-line-size = 2
+line-size = 3
 line-color = ${colors.primary}
 
 border-size = 10
@@ -124,37 +127,40 @@ wrapping-scroll = false
 ; Only show workspaces on the same output as the bar
 ;pin-workspaces = true
 
-label-mode-padding = 2
+label-mode-padding = 1
 label-mode-foreground = #000
 label-mode-background = ${colors.primary}
 
 ; focused = Active workspace on focused monitor
-label-focused = %icon%
+label-focused = %icon% %name%
+label-focused-foreground = ${colors.foreground-alt}
 label-focused-background = ${colors.background-alt}
-label-focused-underline= ${colors.primary}
-label-focused-padding = 2
+label-focused-underline= ${colors.peach}
+label-focused-padding = 1
 
 ; unfocused = Inactive workspace on any monitor
-label-unfocused = %icon%
-label-unfocused-padding = 2
+label-unfocused = %icon% %name%
+label-unfocused-padding = 1
 
 ; visible = Active workspace on unfocused monitor
-label-visible = %icon%
+label-visible = %icon% %name%
 label-visible-background = ${self.label-focused-background}
 label-visible-underline = ${self.label-focused-underline}
 label-visible-padding = ${self.label-focused-padding}
 
 ; urgent = Workspace with urgency hint set
-label-urgent = %icon%
+label-urgent = %icon% %name%
 label-urgent-background = ${colors.alert}
-label-urgent-padding = 2
+label-urgent-padding = 1
 
-ws-icon-0 = 1;
-ws-icon-1 = 2;
-ws-icon-2 = 3;
-ws-icon-3 = 4;
-ws-icon-4 = 5;
-ws-icon-default = 
+ws-icon-0 = code;
+ws-icon-1 = term;
+ws-icon-2 = ffox;
+ws-icon-3 = disc;
+ws-icon-4 = git;
+;ws-icon-default = beer;
+
+strip-wsnumbers = true
 
 ; Separator in between workspaces
 ; label-separator = |
