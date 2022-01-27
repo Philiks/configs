@@ -167,6 +167,11 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
+# Suspend and Hibernate
+bindsym $mod+Shift+q exec systemctl suspend
+bindsym $mod+Shift+w exec systemctl hibernate
+bindsym $mod+Shift+x exec systemctl suspend-then-hibernate
+
 # Screenshot key bindings
 bindsym --release Print exec escrotum '~/Pictures/%Y-%m-%d-%H%M%S_$wx.png'
 bindsym --release Shift+Print exec escrotum '~/Pictures/%Y-%m-%d-%H%M%S_$wx.png' -s
