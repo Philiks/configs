@@ -10,6 +10,9 @@ setopt nomatch
 bindkey -v
 zstyle :compinstall filename '/home/felix/.zshrc'
 
+# Ignore duplicate commands in history
+setopt hist_ignore_all_dups hist_save_nodups
+
 # LS Colors
 export LS_COLORS
 zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}  
