@@ -28,12 +28,17 @@ This siji font fixes the `warn: Dropping unmatched character `. Install this pac
 **[fontawesome-free-5.15.4.zip](https://use.fontawesome.com/releases/v5.15.4/fontawesome-free-5.15.4-desktop.zip)**<br />
 This is the fontawesome zip file. Run `$ unzip fontawesome-free-5.15.4-desktop.zip` to extract the compressed file. Then run:
 ```
+$ sudo mkdir /usr/share/licences/fontawesome
+$ sudo mkdir /usr/share/fonts/OTF
 $ sudo mv ./fontawesome-free-5.15.4-desktop/LICENSE.txt /usr/share/licences/fontawesome
 $ sudo mv ./fontawesome-free-5.15.4-desktop/otfs/Font\ Awesome\ 5\ Brands-Regular-400.otf /usr/share/fonts/OTF
 $ sudo mv ./fontawesome-free-5.15.4-desktop/otfs/Font\ Awesome\ 5\ Free-Regular-400.otf /usr/share/fonts/OTF
 $ sudo mv ./fontawesome-free-5.15.4-desktop/otfs/Font\ Awesome\ 5\ Free-Solid-900.otf /usr/share/fonts/OTF
 ```
 > Note that you must have `unzip` to decompress the zip file. Although you can still use other decompresser package.
+> Note that the directories your moving the files into must be created prior the `mv` command otherwise it will move the file but rename it with the last *folder*. i.e. moving `./fontawesome-free-5.15.4-desktop/LICENSE.txt` to `/usr/share/licences/fontawesome` whilst not having the `fontawesome` directory will rename the `LICENSE.txt` to `fontawesome`.
 ### For i3
 **[escrotum](https://github.com/Roger/escrotum)**<br />
 Install this from the AUR or follow their [installation](https://github.com/Roger/escrotum#install) guide.
+### For tmux
+> If `tmux` won't load the config file, place it inside *home* directory `~` then change the name to `.tmux.conf`. Lastly, run `tmux kill-server` to kill all tmux sessions.
