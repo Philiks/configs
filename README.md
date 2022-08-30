@@ -15,10 +15,64 @@ I am not a linux geek let alone an Arch expert so take my config files with a gr
 
 ## Dependencies
 ### For zsh
-**[zsh git-prompt](https://github.com/git/git/blob/master/contrib/completion/git-prompt.sh)**<br />
-Put this file in /usr/share/zsh/plugins or you can edit the `source` statement inside `.zshrc`.<br /><br />
-**[zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)**<br />
-Follow the [INSTALL.md](https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md) then `cp` the `zsh-syntax-highlighting` directory inside src/ directory to /usr/share/zsh/plugins.<br /><br />
+You can `git clone` these plugins *but* I prefer to just download them using `wget` since changes to these plugins are not that often.
+####[zsh git-prompt](https://github.com/git/git/blob/master/contrib/completion/git-prompt.sh)
+- Download the [raw file](https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh)
+```
+$ wget https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh
+```
+- Create dir in `/usr/share/zsh/plugins/`
+```
+$ sudo mkdir /usr/share/zsh/plugins/zsh-git-prompt
+```
+- Move `git-prompt.sh` inside `zsh-git-prompt`
+```
+$ sudo mv git-prompt.sh /usr/share/zsh/plugins/zsh-git-prompt/
+```
+####[zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
+Follow the [INSTALL.md](https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md) then `cp` the `zsh-syntax-highlighting` directory inside src/ directory to /usr/share/zsh/plugins.<br />
+*or*<br />
+- Download the [raw file](https://raw.githubusercontent.com/zsh-users/zsh-syntax-highlighting/master/zsh-syntax-highlighting.zsh)
+```
+$ wget https://raw.githubusercontent.com/zsh-users/zsh-syntax-highlighting/master/zsh-syntax-highlighting.zsh
+```
+- Create dir in `/usr/share/zsh/plugins/`
+```
+$ sudo mkdir /usr/share/zsh/plugins/zsh-syntax-highlighting
+```
+- Move `zsh-syntax-highlighting.zsh` inside `zsh-syntax-highlighting`
+```
+$ sudo mv zsh-syntax-highlighting.zsh /usr/share/zsh/plugins/zsh-syntax-highlighting/
+```
+####[zsh-history-substring-search](https://github.com/zsh-users/zsh-history-substring-search/blob/master/zsh-history-substring-search.zsh)
+- Download the [raw file](https://raw.githubusercontent.com/zsh-users/zsh-history-substring-search/master/zsh-history-substring-search.zsh)
+```
+$ wget https://raw.githubusercontent.com/zsh-users/zsh-history-substring-search/master/zsh-history-substring-search.zsh
+```
+- Create dir in `/usr/share/zsh/plugins/`
+```
+$ sudo mkdir /usr/share/zsh/plugins/zsh-history-substring-search
+```
+- Move `zsh-history-substring-search.zsh` inside `zsh-history-substring-search`
+```
+$ sudo mv zsh-history-substring-search.zsh /usr/share/zsh/plugins/zsh-history-substring-search/
+```
+####[zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions/blob/master/zsh-autosuggestions.zsh)
+Follow the [INSTALL.md](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md) then `cp` the `zsh-autosuggestions` directory inside src/ directory to /usr/share/zsh/plugins.<br />
+*or*<br />
+- Download the [raw file](https://raw.githubusercontent.com/zsh-users/zsh-autosuggestions/master/zsh-autosuggestions.zsh)
+```
+$ wget https://raw.githubusercontent.com/zsh-users/zsh-autosuggestions/master/zsh-autosuggestions.zsh
+```
+- Create dir in `/usr/share/zsh/plugins/`
+```
+$ sudo mkdir /usr/share/zsh/plugins/zsh-autosuggestions
+```
+- Move `zsh-autosuggestions.zsh` inside `zsh-autosuggestions`
+```
+$ sudo mv zsh-autosuggestions.zsh /usr/share/zsh/plugins/zsh-autosuggestions/
+```
+<br /><br />
 **[imagemagick](https://imagemagick.org/script/download.php)** or for **[arch-based distros](https://archlinux.org/packages/?name=imagemagick)**<br />
 You should also have `kitty` for `alias icat` to work.
 ### For Polybar
