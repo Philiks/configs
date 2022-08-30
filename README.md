@@ -17,8 +17,8 @@ I am not a linux geek let alone an Arch expert so take my config files with a gr
 ### For zsh
 You can `git clone` these plugins *but* I prefer to just download them using `wget` since changes to these plugins are not that often.
 
-#### **[zsh-git-prompt](https://github.com/git/git/blob/master/contrib/completion/git-prompt.sh) to add git informations into your shell**
-<br />**Installation Steps**<br />
+### [zsh-git-prompt](https://github.com/git/git/blob/master/contrib/completion/git-prompt.sh) to add git informations into your shell
+**Installation Steps**<br />
 Download the [raw file](https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh)
 ```
 $ wget https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh
@@ -32,8 +32,8 @@ Move `git-prompt.sh` inside `zsh-git-prompt`
 $ sudo mv git-prompt.sh /usr/share/zsh/plugins/zsh-git-prompt/
 ```
 
-#### <br />**[zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting) to add color highlighting to your shell commands**
-<br />**Installation Steps (by following their guide)**<br />
+### [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting) to add color highlighting to your shell commands
+**Installation Steps (by following their guide)**<br />
 Follow the [INSTALL.md](https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md) then `cp` the `zsh-syntax-highlighting` directory inside `src/` directory to `/usr/share/zsh/plugins`.<br />
 <br />*or*<br />
 <br />**Installation Steps**<br />
@@ -50,8 +50,8 @@ Move `zsh-syntax-highlighting.zsh` inside `zsh-syntax-highlighting`
 $ sudo mv zsh-syntax-highlighting.zsh /usr/share/zsh/plugins/zsh-syntax-highlighting/
 ```
 
-#### <br />**[zsh-history-substring-search](https://github.com/zsh-users/zsh-history-substring-search/blob/master/zsh-history-substring-search.zsh)**
-<br />**Installation Steps**<br />
+### [zsh-history-substring-search](https://github.com/zsh-users/zsh-history-substring-search/blob/master/zsh-history-substring-search.zsh) to add search capability based on `.zhistory`
+**Installation Steps**<br />
 Download the [raw file](https://raw.githubusercontent.com/zsh-users/zsh-history-substring-search/master/zsh-history-substring-search.zsh)
 ```
 $ wget https://raw.githubusercontent.com/zsh-users/zsh-history-substring-search/master/zsh-history-substring-search.zsh
@@ -65,8 +65,8 @@ Move `zsh-history-substring-search.zsh` inside `zsh-history-substring-search`
 $ sudo mv zsh-history-substring-search.zsh /usr/share/zsh/plugins/zsh-history-substring-search/
 ```
 
-#### <br />**[zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions/blob/master/zsh-autosuggestions.zsh)**
-<br />**Installation Steps (by following their guide)**<br />
+### [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions/blob/master/zsh-autosuggestions.zsh) to add auto suggestion to your shell based on frequently used shell commands
+**Installation Steps (by following their guide)**<br />
 Follow the [INSTALL.md](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md) then `cp` the `zsh-autosuggestions` directory inside `src/` directory to `/usr/share/zsh/plugins`.<br />
 <br />*or*<br />
 <br />**Installation Steps**<br />
