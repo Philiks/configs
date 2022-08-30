@@ -53,4 +53,8 @@ alias icat="kitty +kitten icat"
 #  Syntax Highlighting
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 #  Git config
-source /usr/share/zsh/plugins/git-prompt.sh
+source /usr/share/zsh/plugins/zsh-git-prompt/git-prompt.sh
+#  Autosuggestions
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+#  History substring
+source /usr/share/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
