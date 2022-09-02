@@ -1,4 +1,8 @@
-" Sets how many lines of history VIM has to remember
+" Execute local vimrc for a particular project.
+" Useful when the project has different lint config than your personal vimrc.
+set exrc
+
+" Sets how many lines of history VIM has to remember.
 set history=500
 
 " Line info
@@ -11,13 +15,24 @@ set smarttab      " Be smart when using tabs
 set tabstop=2     " 1 tab = 4 spaces
 set shiftwidth=2  " 1 tab = 4 spaces
 
-" Linebreak on 500 characters
-set lbr
-set tw=500
-
-set ai   " Auto indent
-set si   " Smart indent
+" Linebreak on 80 characters
+set linebreak
+set textwidth=80
 set wrap " Wrap lines
+
+" Indention
+set autoindent    " Auto indent
+set smartindent   " Smart indent
+
+" Scroll offset
+set scrolloff=8
+
+" Searched items do not remain highlighted.
+set nohlsearch
+
+" Column settings
+set colorcolumn=80
+set signcolumn=yes
 
 " Enable syntax highlighting
 syntax enable
