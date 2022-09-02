@@ -87,6 +87,9 @@ $ sudo mv zsh-autosuggestions.zsh /usr/share/zsh/plugins/zsh-autosuggestions/
 **[imagemagick](https://imagemagick.org/script/download.php)** or for **[arch-based distros](https://archlinux.org/packages/?name=imagemagick)**<br />
 You should also have `kitty` for `alias icat` to work.
 
+### For Vim
+If you are using [neovim](https://neovim.io/) you can use [this](https://neovim.io/doc/user/nvim.html#nvim-from-vim) to source the `.vimrc` for `.config/nvim/init.vim`.
+
 ### For Polybar
 Put the `launch.sh` and `config` under `.config/polybar`.
 
