@@ -4,6 +4,7 @@ I am not a linux geek let alone an Arch expert so take my config files with a gr
 ## This repo has config file for:
 - zsh
 - vim
+- neovim
 - tmux
 - dmenu
 - polybar
@@ -89,6 +90,9 @@ You should also have `kitty` for `alias icat` to work.
 
 ### For Vim
 If you are using [neovim](https://neovim.io/) you can use [this](https://neovim.io/doc/user/nvim.html#nvim-from-vim) to source the `.vimrc` for `.config/nvim/init.vim`.
+
+### For Neovim
+Follow [this](./nvim/README.md) if you want to use the `neovim` config only.
 
 ### For Polybar
 Put the `launch.sh` and `config` under `.config/polybar`.
