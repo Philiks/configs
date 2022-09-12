@@ -1,3 +1,6 @@
+"""""""""""""""
+"   Options   "
+"""""""""""""""
 " Execute local vimrc for a particular project.
 " Useful when the project has different lint config than your personal vimrc.
 set exrc
@@ -125,5 +128,75 @@ syntax enable
 
 set t_Co=256
 
-" AWIT syntax
-autocmd BufRead,BufNewFile *.awit set filetype=awit
+"""""""""""""""
+"   Keymaps   "
+"""""""""""""""
+let mapleader = " "
+
+" ===== Normal ===== 
+" Remap clear search highlights since window navigation overrides CTRL-l
+nnoremap <C-_> :nohsearch<CR> 
+
+-- Moving cursor to start and end of line
+nnoremap <S-h> ^
+nnoremap <S-l> ^
+
+-- Select all text in buffer
+nnoremap <leader>a ggVG
+
+-- Yank all text in buffer
+nnoremap <leader>ya ggyG
+
+-- Yank all text in unnamedplus (system clipboard)
+nnoremap <leader>+ya gg"yG
+
+-- Better window navigation (moving between splits)
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
+
+-- Open explorer
+nnoremap <leader>h :Hex 30<CR>
+nnoremap <leader>l :Lex 30<CR>
+
+-- Resize with vim navigation keys
+nnoremap <A-K> :resize -2<CR>
+nnoremap <A-J> :resize +2<CR>
+nnoremap <A-H> :vertical resize -2<CR>
+nnoremap <A-L> :vertical resize +2<CR>
+
+-- Navigate buffers
+nnoremap <S-n> :bnext<CR>
+nnoremap <S-b> :bprevious<CR>
+
+-- Insert --
+-- Backward tab
+inoremap <S-Tab> <C-o><<
+
+-- Exit insert mode Alt-q(uit)
+inoremap <A-q> <ESC>
+
+-- Visual --
+-- Stay in indent mode
+vnoremap < <gv
+vnoremap > >gv
+
+-- Move text up and down
+vnoremap <A-j> :m .+1<CR>==
+vnoremap <A-k> :m .-2<CR>==
+vnoremap p "_dP
+
+-- Visual Block --
+-- Move text up and down
+xnoremap J :move '>+1<CR>gv-gv
+xnoremap K :move '<-2<CR>gv-gv
+xnoremap <A-j> :move '>+1<CR>gv-gv
+xnoremap <A-k> :move '<-2<CR>gv-gv
+
+-- Terminal --
+-- Better terminal navigation
+tmap <C-h> <C-\><C-N><C-w>h
+tmap <C-j> <C-\><C-N><C-w>j
+tmap <C-k> <C-\><C-N><C-w>k
+tmap <C-l> <C-\><C-N><C-w>l
