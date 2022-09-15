@@ -26,7 +26,7 @@ vim.cmd [[
 -- Use a protected call so we don't error out on first use
 local status_ok, packer = pcall(require, "packer")
 if not status_ok then
-  print "Failed to load 'packer'. Try again."
+  vim.notify("Failed to load 'packer'. Try again.")
   return
 end
 
@@ -54,6 +54,9 @@ return packer.startup(function(use)
 
   -- Plugins can have post-install/update hooks
   use {'iamcco/markdown-preview.nvim', run = 'cd app && npm install'}
+
+  -- Colorscheme
+  use 'folke/tokyonight.nvim'
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
