@@ -26,7 +26,7 @@ vim.cmd [[
 -- Use a protected call so we don't error out on first use
 local status_ok, packer = pcall(require, "packer")
 if not status_ok then
-  vim.notify("Failed to load 'packer'. Try again.")
+  vim.notify("Failed to load package: 'packer'")
   return
 end
 
@@ -42,21 +42,24 @@ packer.init {
 -- Install your plugins here
 return packer.startup(function(use)
   -- Plugins are placed here
-  --
-  -- Have packer manage itself
-  use "wbthomason/packer.nvim"
-  
-  -- An implementation of the Popup API from vim in Neovim
-  use "nvim-lua/popup.nvim"
-
-  -- Useful lua functions used ny lots of plugins
-  use "nvim-lua/plenary.nvim"
-
-  -- Plugins can have post-install/update hooks
-  use {'iamcco/markdown-preview.nvim', run = 'cd app && npm install'}
+  use "wbthomason/packer.nvim" -- Have packer manage itself
+  use "nvim-lua/popup.nvim" -- An implementation of the Popup API from vim
+  use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
+  use {'iamcco/markdown-preview.nvim', run = 'cd app && npm install'} -- Run :MarkdownPreview to live preview *.md files
 
   -- Colorscheme
-  use 'folke/tokyonight.nvim'
+  use 'folke/tokyonight.nvim' -- Change of pace from solarized dark
+
+  -- Completion plugins
+  use "hrsh7th/nvim-cmp" -- The completion plugin
+  use "hrsh7th/cmp-buffer" -- buffer completions
+  use "hrsh7th/cmp-path" -- path completions
+  use "hrsh7th/cmp-cmdline" -- cmdline completions
+  use "saadparwaiz1/cmp_luasnip" -- snippet completions
+
+  -- Snippets
+  use "L3MON4D3/LuaSnip" --snippet engine
+  use "rafamadriz/friendly-snippets" -- a bunch of snippets to use
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
