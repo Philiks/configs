@@ -43,7 +43,8 @@ The final structure should be:
     │       │       ├── jsonls.lua
     │       │       └── sumneko_lua.lua
     │       ├── options.lua
-    │       └── plugins.lua
+    │       ├── plugins.lua
+    │       └── telescope.lua
     ├── plugin
     │   └── packer_compiled.lua
     └── README.md
