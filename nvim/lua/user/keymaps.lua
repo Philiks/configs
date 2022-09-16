@@ -44,9 +44,6 @@ keymap("n", "<leader>a", "ggVG", opts)
 -- Yank all text in buffer
 keymap("n", "<leader>ya", "ggyG", opts)
 
--- Yank all text in unnamedplus (system clipboard)
-keymap("n", "<leader>+ya", 'gg"+yG', opts)
-
 -- Remap clear search highlights since window navigation overrides CTRL-l
 keymap("n", "<C-_>", ":nohlsearch<CR>", opts)
 
