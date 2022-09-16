@@ -50,6 +50,7 @@ return packer.startup(function(use)
     run = 'cd app && npm install'
   }
   use "windwp/nvim-autopairs" -- Autopairs, integrates with both cmp and treesitter
+  use "numToStr/Comment.nvim" -- Easily comment stuff
 
   -- Colorscheme
   use 'folke/tokyonight.nvim' -- Change of pace from solarized dark
@@ -82,6 +83,7 @@ return packer.startup(function(use)
     run = ":TSUpdate",
   }
   use "p00f/nvim-ts-rainbow" -- colored paired brackets, parenthesis, and such
+  use 'JoosepAlviste/nvim-ts-context-commentstring'
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

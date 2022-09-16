@@ -34,6 +34,7 @@ The final structure should be:
     │   └── user
     │       ├── autopairs.lua
     │       ├── colorscheme.lua
+    │       ├── comment.lua
     │       ├── completion.lua
     │       ├── keymaps.lua
     │       ├── lsp
