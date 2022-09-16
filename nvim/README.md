@@ -44,7 +44,8 @@ The final structure should be:
     │       │       └── sumneko_lua.lua
     │       ├── options.lua
     │       ├── plugins.lua
-    │       └── telescope.lua
+    │       ├── telescope.lua
+    │       └── treesitter.lua
     ├── plugin
     │   └── packer_compiled.lua
     └── README.md

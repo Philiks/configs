@@ -45,7 +45,10 @@ return packer.startup(function(use)
   use "wbthomason/packer.nvim" -- Have packer manage itself
   use "nvim-lua/popup.nvim" -- An implementation of the Popup API from vim
   use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
-  use {'iamcco/markdown-preview.nvim', run = 'cd app && npm install'} -- Run :MarkdownPreview to live preview *.md files
+  use { -- Run :MarkdownPreview to live preview *.md files
+    'iamcco/markdown-preview.nvim',
+    run = 'cd app && npm install'
+  }
 
   -- Colorscheme
   use 'folke/tokyonight.nvim' -- Change of pace from solarized dark
@@ -66,10 +69,18 @@ return packer.startup(function(use)
   -- LSP
   use "neovim/nvim-lspconfig" -- enable LSP
   use "williamboman/nvim-lsp-installer" -- simple to use language server installer
+  use "tamago324/nlsp-settings.nvim" -- language server settings defined in json for
 
   -- Telescope
   use "nvim-telescope/telescope.nvim"
   use 'nvim-telescope/telescope-media-files.nvim'
+
+  -- Treesitter
+  use {
+    "nvim-treesitter/nvim-treesitter",
+    run = ":TSUpdate",
+  }
+  use "p00f/nvim-ts-rainbow"
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
