@@ -5,10 +5,44 @@ if not status_ok then
 end
 
 configs.setup {
-  ensure_installed = "all", -- A list of parser names, or "all", or "maintained" (has an active maintainer)
+  -- A list of parser names, or "all"
+  -- Using "all" causes problems since some parsers are no longer maintained.
+  ensure_installed = {
+    "bash",
+    "c",
+    "comment",
+    "cpp",
+    "css",
+    "dockerfile",
+    "gitattributes",
+    "gitignore",
+    "help",
+    "html",
+    "http",
+    "java",
+    "javascript",
+    "jsdoc",
+    "json",
+    "json5",
+    "kotlin",
+    "lua",
+    "markdown",
+    "markdown_inline",
+    "php",
+    "python",
+    "regex",
+    "sql",
+    "tsx",
+    "typescript",
+    "vim",
+    "yaml",
+  },
   sync_install = false, -- Install parsers synchronously (only applied to `ensure_installed`)
   auto_install = true, -- Automatically install missing parsers when entering buffer
   ignore_install = { "" }, -- List of parsers to ignore installing (for "all")
+  autopairs = {
+    enable = true,
+  },
 
   highlight = {
     enable = true, -- `false` will disable the whole extension

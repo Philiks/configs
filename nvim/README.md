@@ -32,6 +32,7 @@ The final structure should be:
     ├── init.lua
     ├── lua
     │   └── user
+    │       ├── autopairs.lua
     │       ├── colorscheme.lua
     │       ├── completion.lua
     │       ├── keymaps.lua

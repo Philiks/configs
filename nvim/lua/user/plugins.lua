@@ -49,6 +49,7 @@ return packer.startup(function(use)
     'iamcco/markdown-preview.nvim',
     run = 'cd app && npm install'
   }
+  use "windwp/nvim-autopairs" -- Autopairs, integrates with both cmp and treesitter
 
   -- Colorscheme
   use 'folke/tokyonight.nvim' -- Change of pace from solarized dark
@@ -72,15 +73,15 @@ return packer.startup(function(use)
   use "tamago324/nlsp-settings.nvim" -- language server settings defined in json for
 
   -- Telescope
-  use "nvim-telescope/telescope.nvim"
-  use 'nvim-telescope/telescope-media-files.nvim'
+  use "nvim-telescope/telescope.nvim" -- fuzzy finder inside buffer or files within directory
+  use 'nvim-telescope/telescope-media-files.nvim' -- telescope for media files such as images
 
   -- Treesitter
-  use {
+  use { -- highlighting based on the abstract syntax tree
     "nvim-treesitter/nvim-treesitter",
     run = ":TSUpdate",
   }
-  use "p00f/nvim-ts-rainbow"
+  use "p00f/nvim-ts-rainbow" -- colored paired brackets, parenthesis, and such
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
