@@ -85,6 +85,9 @@ return packer.startup(function(use)
   use "p00f/nvim-ts-rainbow" -- colored paired brackets, parenthesis, and such
   use 'JoosepAlviste/nvim-ts-context-commentstring'
 
+  -- Git
+  use "lewis6991/gitsigns.nvim" -- git signs in the vim sign column
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then

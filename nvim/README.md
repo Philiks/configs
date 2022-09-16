@@ -36,6 +36,7 @@ The final structure should be:
     │       ├── colorscheme.lua
     │       ├── comment.lua
     │       ├── completion.lua
+    │       ├── gitsigns.lua
     │       ├── keymaps.lua
     │       ├── lsp
     │       │   ├── handlers.lua
