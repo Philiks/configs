@@ -46,16 +46,18 @@ return packer.startup(function(use)
   use "nvim-lua/popup.nvim" -- An implementation of the Popup API from vim
   use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
   use { -- Run :MarkdownPreview to live preview *.md files
-    'iamcco/markdown-preview.nvim',
-    run = 'cd app && npm install'
+    "iamcco/markdown-preview.nvim",
+    run = "cd app && npm install"
   }
   use "windwp/nvim-autopairs" -- Autopairs, integrates with both cmp and treesitter
   use "numToStr/Comment.nvim" -- Easily comment stuff
-  use 'kyazdani42/nvim-web-devicons' -- Used to display file icons
-  use 'kyazdani42/nvim-tree.lua' -- Better file explorer than :Lexplore
+  use "kyazdani42/nvim-web-devicons" -- Used to display file icons
+  use "kyazdani42/nvim-tree.lua" -- Better file explorer than :Lexplore
+  use "akinsho/bufferline.nvim" -- Bufferline similar to tabs in other IDEs
+  use "moll/vim-bbye" -- Allows buffers to be closed individually
 
   -- Colorscheme
-  use 'folke/tokyonight.nvim' -- Change of pace from solarized dark
+  use "folke/tokyonight.nvim" -- Change of pace from solarized dark
 
   -- Completion plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin
@@ -77,7 +79,7 @@ return packer.startup(function(use)
 
   -- Telescope
   use "nvim-telescope/telescope.nvim" -- Fuzzy finder inside buffer or files within directory
-  use 'nvim-telescope/telescope-media-files.nvim' -- Telescope for media files such as images
+  use "nvim-telescope/telescope-media-files.nvim" -- Telescope for media files such as images
 
   -- Treesitter
   use { -- Highlighting based on the abstract syntax tree
@@ -85,7 +87,7 @@ return packer.startup(function(use)
     run = ":TSUpdate",
   }
   use "p00f/nvim-ts-rainbow" -- Colored paired brackets, parenthesis, and such
-  use 'JoosepAlviste/nvim-ts-context-commentstring' -- Context/file type sensitive comments
+  use "JoosepAlviste/nvim-ts-context-commentstring" -- Context/file type sensitive comments
 
   -- Git
   use "lewis6991/gitsigns.nvim" -- Git signs in the vim sign column

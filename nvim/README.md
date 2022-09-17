@@ -33,6 +33,7 @@ The final structure should be:
     ├── lua
     │   └── user
     │       ├── autopairs.lua
+    │       ├── bufferline.lua
     │       ├── colorscheme.lua
     │       ├── comment.lua
     │       ├── completion.lua
