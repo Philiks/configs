@@ -1,4 +1,4 @@
-o = vim.opt    -- assign redundant vim.opt
+local o = vim.opt    -- assign redundant vim.opt
 
 -- use :help [option] for documentation
 o.exrc = true                             -- use project-specific init.vim (if there is)
