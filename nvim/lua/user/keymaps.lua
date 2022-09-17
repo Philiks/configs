@@ -54,7 +54,7 @@ keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
 
 -- Open explorer
-keymap("n", "<leader>l", ":Lex 30<CR>", opts)
+keymap("n", "<leader>l", ":NvimTreeToggle<CR>", opts)
 
 -- Resize with vim navigation keys
 keymap("n", "<A-k>", ":resize -2<CR>", opts)

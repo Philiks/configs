@@ -51,42 +51,44 @@ return packer.startup(function(use)
   }
   use "windwp/nvim-autopairs" -- Autopairs, integrates with both cmp and treesitter
   use "numToStr/Comment.nvim" -- Easily comment stuff
+  use 'kyazdani42/nvim-web-devicons' -- Used to display file icons
+  use 'kyazdani42/nvim-tree.lua' -- Better file explorer than :Lexplore
 
   -- Colorscheme
   use 'folke/tokyonight.nvim' -- Change of pace from solarized dark
 
   -- Completion plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin
-  use "hrsh7th/cmp-buffer" -- buffer completions
-  use "hrsh7th/cmp-path" -- path completions
-  use "hrsh7th/cmp-cmdline" -- cmdline completions
-  use "hrsh7th/cmp-nvim-lsp" -- lsp completion
-  use "hrsh7th/cmp-nvim-lua" -- lua completion
-  use "saadparwaiz1/cmp_luasnip" -- snippet completions
+  use "hrsh7th/cmp-buffer" -- Buffer completions
+  use "hrsh7th/cmp-path" -- Path completions
+  use "hrsh7th/cmp-cmdline" -- Cmdline completions
+  use "hrsh7th/cmp-nvim-lsp" -- Lsp completion
+  use "hrsh7th/cmp-nvim-lua" -- Lua completion
+  use "saadparwaiz1/cmp_luasnip" -- Snippet completions
 
   -- Snippets
-  use "L3MON4D3/LuaSnip" --snippet engine
-  use "rafamadriz/friendly-snippets" -- a bunch of snippets to use
+  use "L3MON4D3/LuaSnip" -- Snippet engine
+  use "rafamadriz/friendly-snippets" -- A bunch of snippets to use
 
   -- LSP
-  use "neovim/nvim-lspconfig" -- enable LSP
-  use "williamboman/nvim-lsp-installer" -- simple to use language server installer
-  use "tamago324/nlsp-settings.nvim" -- language server settings defined in json for
+  use "neovim/nvim-lspconfig" -- Enable LSP
+  use "williamboman/nvim-lsp-installer" -- Simple to use language server installer
+  use "tamago324/nlsp-settings.nvim" -- Language server settings defined in json for
 
   -- Telescope
-  use "nvim-telescope/telescope.nvim" -- fuzzy finder inside buffer or files within directory
-  use 'nvim-telescope/telescope-media-files.nvim' -- telescope for media files such as images
+  use "nvim-telescope/telescope.nvim" -- Fuzzy finder inside buffer or files within directory
+  use 'nvim-telescope/telescope-media-files.nvim' -- Telescope for media files such as images
 
   -- Treesitter
-  use { -- highlighting based on the abstract syntax tree
+  use { -- Highlighting based on the abstract syntax tree
     "nvim-treesitter/nvim-treesitter",
     run = ":TSUpdate",
   }
-  use "p00f/nvim-ts-rainbow" -- colored paired brackets, parenthesis, and such
-  use 'JoosepAlviste/nvim-ts-context-commentstring'
+  use "p00f/nvim-ts-rainbow" -- Colored paired brackets, parenthesis, and such
+  use 'JoosepAlviste/nvim-ts-context-commentstring' -- Context/file type sensitive comments
 
   -- Git
-  use "lewis6991/gitsigns.nvim" -- git signs in the vim sign column
+  use "lewis6991/gitsigns.nvim" -- Git signs in the vim sign column
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
