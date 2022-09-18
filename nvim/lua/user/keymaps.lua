@@ -53,9 +53,6 @@ keymap("n", "<C-j>", "<C-w>j", opts)
 keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
 
--- Open explorer
-keymap("n", "<leader>l", ":NvimTreeToggle<CR>", opts)
-
 -- Resize with vim navigation keys
 keymap("n", "<A-k>", ":resize -2<CR>", opts)
 keymap("n", "<A-j>", ":resize +2<CR>", opts)
@@ -101,3 +98,11 @@ keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
 keymap("n", "<leader>f", "<cmd>Telescope find_files<cr>", opts)
 keymap("n", "<leader>g", "<cmd>Telescope live_grep<cr>", opts)
 keymap("n", "<leader>m", "<cmd>Telescope media_files<cr>", opts)
+
+-- NvimTree
+-- Open explorer
+keymap("n", "<leader>l", ":NvimTreeToggle<CR>", opts)
+
+-- NullLs
+-- Format source code
+keymap("n", "<leader>F", ":Format<CR>", opts)

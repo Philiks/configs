@@ -8,6 +8,8 @@ This configuration is heavily inspired by [Neovim-from-scratch](https://github.c
 - Lua (this configuration file uses Lua and not VimScript)
 - Neovim
 - Git (for [gitsigns](https://github.com/lewis6991/gitsigns.nvim))
+- ESLint an npm [package](https://www.npmjs.com/package/eslint) (for Null-ls [diagnostics](https://github.com/jose-elias-alvarez/null-ls.nvim/tree/main/lua/null-ls/builtins/diagnostics))
+- Prettier an npm [package](https://www.npmjs.com/package/prettier) (for Null-ls [formatting](https://github.com/jose-elias-alvarez/null-ls.nvim/tree/main/lua/null-ls/builtins/formatting))
 - Node (for [iamcco/markdown-preview](https://github.com/iamcco/markdown-preview.nvim))
 > You could use yarn but you must edit this line in `./lua/user/plugins.lua`:
 ```
@@ -43,6 +45,7 @@ The final structure should be:
     │       │   ├── handlers.lua
     │       │   ├── init.lua
     │       │   ├── lsp-installer.lua
+    │       │   ├── null-ls.lua
     │       │   └── settings
     │       │       ├── jsonls.lua
     │       │       └── sumneko_lua.lua
