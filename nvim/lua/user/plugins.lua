@@ -70,6 +70,8 @@ return packer.startup(function(use)
   use "nvim-lualine/lualine.nvim" -- Neovim status line plugin
   use "lewis6991/impatient.nvim" -- Improve startup time for Neovim
   use "lukas-reineke/indent-blankline.nvim" -- Indent guides for Neovim
+  use "goolord/alpha-nvim" -- Greeter for Neovim
+  use "antoinemadec/FixCursorHold.nvim" -- This is needed to fix lsp doc highlight
 
   -- Snippets
   use "L3MON4D3/LuaSnip" -- Snippet engine

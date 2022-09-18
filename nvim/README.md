@@ -35,6 +35,7 @@ The final structure should be:
     ├── lua
     │   └── user
     │       ├── autopairs.lua
+    │       ├── alpha.lua
     │       ├── bufferline.lua
     │       ├── colorscheme.lua
     │       ├── comment.lua

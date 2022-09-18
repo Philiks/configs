@@ -14,4 +14,5 @@ require "user.bufferline"
 require "user.lualine"
 require "user.impatient"
 require "user.indentline"
+require "user.alpha"
 
