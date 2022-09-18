@@ -41,6 +41,7 @@ The final structure should be:
     │       ├── completion.lua
     │       ├── gitsigns.lua
     │       ├── impatient.lua
+    │       ├── indentline.lua
     │       ├── keymaps.lua
     │       ├── lsp
     │       │   ├── handlers.lua

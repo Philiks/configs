@@ -69,6 +69,7 @@ return packer.startup(function(use)
   use "saadparwaiz1/cmp_luasnip" -- Snippet completions
   use "nvim-lualine/lualine.nvim" -- Neovim status line plugin
   use "lewis6991/impatient.nvim" -- Improve startup time for Neovim
+  use "lukas-reineke/indent-blankline.nvim" -- Indent guides for Neovim
 
   -- Snippets
   use "L3MON4D3/LuaSnip" -- Snippet engine
