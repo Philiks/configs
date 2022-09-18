@@ -67,6 +67,7 @@ return packer.startup(function(use)
   use "hrsh7th/cmp-nvim-lsp" -- Lsp completion
   use "hrsh7th/cmp-nvim-lua" -- Lua completion
   use "saadparwaiz1/cmp_luasnip" -- Snippet completions
+  use 'nvim-lualine/lualine.nvim' -- Neovim status line plugin
 
   -- Snippets
   use "L3MON4D3/LuaSnip" -- Snippet engine
@@ -76,7 +77,7 @@ return packer.startup(function(use)
   use "neovim/nvim-lspconfig" -- Enable LSP
   use "williamboman/nvim-lsp-installer" -- Simple to use language server installer
   use "tamago324/nlsp-settings.nvim" -- Language server settings defined in json for
-  use "jose-elias-alvarez/null-ls.nvim" -- for formatters and linters
+  use "jose-elias-alvarez/null-ls.nvim" -- For formatters and linters
 
   -- Telescope
   use "nvim-telescope/telescope.nvim" -- Fuzzy finder inside buffer or files within directory

@@ -49,6 +49,7 @@ The final structure should be:
     │       │   └── settings
     │       │       ├── jsonls.lua
     │       │       └── sumneko_lua.lua
+    │       ├── lualine.lua
     │       ├── nvim-tree.lua
     │       ├── options.lua
     │       ├── plugins.lua
