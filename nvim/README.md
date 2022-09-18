@@ -40,6 +40,7 @@ The final structure should be:
     │       ├── comment.lua
     │       ├── completion.lua
     │       ├── gitsigns.lua
+    │       ├── impatient.lua
     │       ├── keymaps.lua
     │       ├── lsp
     │       │   ├── handlers.lua

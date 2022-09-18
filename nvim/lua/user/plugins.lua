@@ -67,7 +67,8 @@ return packer.startup(function(use)
   use "hrsh7th/cmp-nvim-lsp" -- Lsp completion
   use "hrsh7th/cmp-nvim-lua" -- Lua completion
   use "saadparwaiz1/cmp_luasnip" -- Snippet completions
-  use 'nvim-lualine/lualine.nvim' -- Neovim status line plugin
+  use "nvim-lualine/lualine.nvim" -- Neovim status line plugin
+  use "lewis6991/impatient.nvim" -- Improve startup time for Neovim
 
   -- Snippets
   use "L3MON4D3/LuaSnip" -- Snippet engine
