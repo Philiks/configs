@@ -4,12 +4,13 @@ Transitioning from [vim](https://www.vim.org/) to [neovim](https://neovim.io/).
 ## Credits
 This configuration is heavily inspired by [Neovim-from-scratch](https://github.com/LunarVim/Neovim-from-scratch) of [LunarVim](https://github.com/LunarVim).
 
-## Requirements
+## Dependencies
 - Lua (this configuration file uses Lua and not VimScript)
 - Neovim
 - Git (for [gitsigns](https://github.com/lewis6991/gitsigns.nvim))
 - ESLint an npm [package](https://www.npmjs.com/package/eslint) (for Null-ls [diagnostics](https://github.com/jose-elias-alvarez/null-ls.nvim/tree/main/lua/null-ls/builtins/diagnostics))
 - Prettier an npm [package](https://www.npmjs.com/package/prettier) (for Null-ls [formatting](https://github.com/jose-elias-alvarez/null-ls.nvim/tree/main/lua/null-ls/builtins/formatting))
+- ctags (for [preservim/tagbar](https://github.com/preservim/tagbar))
 - Node (for [iamcco/markdown-preview](https://github.com/iamcco/markdown-preview.nvim))
 > You could use yarn but you must edit this line in `./lua/user/plugins.lua`:
 ```

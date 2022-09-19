@@ -99,10 +99,16 @@ keymap("n", "<leader>f", "<cmd>Telescope find_files<cr>", opts)
 keymap("n", "<leader>g", "<cmd>Telescope live_grep<cr>", opts)
 keymap("n", "<leader>m", "<cmd>Telescope media_files<cr>", opts)
 
--- NvimTree
+-- NvimTree --
 -- Open explorer
 keymap("n", "<leader>l", ":NvimTreeToggle<CR>", opts)
 
--- NullLs
+-- NullLs --
 -- Format source code
 keymap("n", "<leader>F", ":Format<CR>", opts)
+
+-- Vim Bbye --
+keymap("n", "<leader>c", ":Bdelete<CR>", opts)
+
+-- Tagbar -- 
+keymap("n", "<leader>d", ":TagbarToggle<CR>", opts)

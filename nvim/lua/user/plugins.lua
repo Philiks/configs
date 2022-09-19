@@ -55,6 +55,7 @@ return packer.startup(function(use)
   use "kyazdani42/nvim-tree.lua" -- Better file explorer than :Lexplore
   use "akinsho/bufferline.nvim" -- Bufferline similar to tabs in other IDEs
   use "moll/vim-bbye" -- Allows buffers to be closed individually
+  use "preservim/tagbar"  -- Shows classes, methods, fields on the side
 
   -- Colorscheme
   use "folke/tokyonight.nvim" -- Change of pace from solarized dark
