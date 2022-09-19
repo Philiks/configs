@@ -20,7 +20,7 @@ local term_opts = { silent = true }
 -- Shorten function name
 local keymap = vim.api.nvim_set_keymap
 
---Remap space as leader key
+-- Remap space as leader key
 keymap("", "<Space>", "<Nop>", opts)
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
@@ -95,20 +95,20 @@ keymap("t", "<C-k>", "<C-\\><C-N><C-w>k", term_opts)
 keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
 
 -- Telescope --
-keymap("n", "<leader>f", "<cmd>Telescope find_files<cr>", opts)
-keymap("n", "<leader>g", "<cmd>Telescope live_grep<cr>", opts)
-keymap("n", "<leader>m", "<cmd>Telescope media_files<cr>", opts)
+keymap("n", "<leader>f", "<cmd>Telescope find_files<CR>", opts)
+keymap("n", "<leader>g", "<cmd>Telescope live_grep<CR>", opts)
+keymap("n", "<leader>m", "<cmd>Telescope media_files<CR>", opts)
 
 -- NvimTree --
 -- Open explorer
-keymap("n", "<leader>l", ":NvimTreeToggle<CR>", opts)
+keymap("n", "<leader>l", "<cmd>NvimTreeToggle<CR>", opts)
 
 -- NullLs --
 -- Format source code
-keymap("n", "<leader>F", ":Format<CR>", opts)
+keymap("n", "<leader>F", "<cmd>Format<CR>", opts)
 
 -- Vim Bbye --
-keymap("n", "<leader>c", ":Bdelete<CR>", opts)
+keymap("n", "<leader>c", "<cmd>Bdelete<CR>", opts)
 
 -- Tagbar -- 
-keymap("n", "<leader>d", ":TagbarToggle<CR>", opts)
+keymap("n", "<leader>d", "<cmd>TagbarToggle<CR>", opts)

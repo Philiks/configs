@@ -1,44 +1,72 @@
 local status_ok, alpha = pcall(require, "alpha")
 if not status_ok then
-  vim.notify("Failed to load package: 'alpha'")
+  vim.notify("failed to load package: 'alpha'")
   return
 end
 
 local dashboard = require("alpha.themes.dashboard")
 dashboard.section.header.val = {
-  [[                               __                ]],
-  [[  ___     ___    ___   __  __ /\_\    ___ ___    ]],
-  [[ / _ `\  / __`\ / __`\/\ \/\ \\/\ \  / __` __`\  ]],
-  [[/\ \/\ \/\  __//\ \_\ \ \ \_/ |\ \ \/\ \/\ \/\ \ ]],
-  [[\ \_\ \_\ \____\ \____/\ \___/  \ \_\ \_\ \_\ \_\]],
-  [[ \/_/\/_/\/____/\/___/  \/__/    \/_/\/_/\/_/\/_/]],
-}
+--  [[                               __                ]],
+--  [[  ___     ___    ___   __  __ /\_\    ___ ___    ]],
+--  [[ / _ `\  / __`\ / __`\/\ \/\ \\/\ \  / __` __`\  ]],
+--  [[/\ \/\ \/\  __//\ \_\ \ \ \_/ |\ \ \/\ \/\ \/\ \ ]],
+--  [[\ \_\ \_\ \____\ \____/\ \___/  \ \_\ \_\ \_\ \_\]],
+--  [[ \/_/\/_/\/____/\/___/  \/__/    \/_/\/_/\/_/\/_/]],
+
+-- for the meme
+  [[  █▀▀▀▀▀█ ▀▀      █ █▀▀▀▀▀█ ]],
+  [[  █ ███ █ █▄ ██▀▄▀  █ ███ █ ]],
+  [[  █ ▀▀▀ █ ▀█▀▀▄▄ ▀  █ ▀▀▀ █ ]],
+  [[  ▀▀▀▀▀▀▀ ▀▄▀▄▀ ▀ █ ▀▀▀▀▀▀▀ ]],
+  [[  ▀▀▀▀▄ ▀▄▀▄  ▀ █ █▀ ▄▀▀▀▄▀ ]],
+  [[   ████ ▀█   █▀█▄▄▄▄███▄▄   ]],
+  [[    ▀ ▄█▀ ▄█▄ █▀ █▄▀███ ▀▀█ ]],
+  [[  ▄▀▄█▄ ▀▀▄▄  ▄▀▀ ██▄▄█ ▀▀▄ ]],
+  [[     ▀▀▀▀ ▄█  ██▄▀█▀▀▀█▀█▀█ ]],
+  [[  █▀▀▀▀▀█   ▄ ▄▀▀ █ ▀ █ ▀█▀ ]],
+  [[  █ ███ █ ▄█▀▄ ▄▄ ▀██▀██▄██ ]],
+  [[  █ ▀▀▀ █ █  ██▄██ ▄▀ █ █▀  ]],
+  [[  ▀▀▀▀▀▀▀ ▀▀▀   ▀   ▀▀▀▀▀▀▀ ]],
+
+-- for real tho
+-- [[      █     █░ ██░ ██  ▄▄▄     ▄▄▄█████▓     ]],
+-- [[     ▓█░ █ ░█░▓██░ ██▒▒████▄   ▓  ██▒ ▓▒     ]],
+-- [[     ▒█░ █ ░█ ▒██▀▀██░▒██  ▀█▄ ▒ ▓██░ ▒░     ]],
+-- [[     ░█░ █ ░█ ░▓█ ░██ ░██▄▄▄▄██░ ▓██▓ ░      ]],
+-- [[     ░░██▒██▓ ░▓█▒░██▓ ▓█   ▓██▒ ▒██▒ ░      ]],
+-- [[     ░ ▓░▒ ▒   ▒ ░░▒░▒ ▒▒   ▓▒█░ ▒ ░░        ]],
+-- [[       ▒ ░ ░   ▒ ░▒░ ░  ▒   ▒▒ ░   ░         ]],
+-- [[       ░   ░   ░  ░░ ░  ░   ▒    ░           ]],
+-- [[ ███▄ ▄███▓ ▒█████   █    ██   ██████ ▓█████ ]],
+-- [[▓██▒▀█▀ ██▒▒██▒  ██▒ ██  ▓██▒▒██    ▒ ▓█   ▀ ]],
+-- [[▓██    ▓██░▒██░  ██▒▓██  ▒██░░ ▓██▄   ▒███   ]],
+-- [[▒██    ▒██ ▒██   ██░▓▓█  ░██░  ▒   ██▒▒▓█  ▄ ]],
+-- [[▒██▒   ░██▒░ ████▓▒░▒▒█████▓ ▒██████▒▒░▒████▒]],
+-- [[░ ▒░   ░  ░░ ▒░▒░▒░ ░▒▓▒ ▒ ▒ ▒ ▒▓▒ ▒ ░░░ ▒░ ░]],
+-- [[░  ░      ░  ░ ▒ ▒░ ░░▒░ ░ ░ ░ ░▒  ░ ░ ░ ░  ░]],
+-- [[░      ░   ░ ░ ░ ▒   ░░░ ░ ░ ░  ░  ░     ░   ]],
+-- [[       ░       ░ ░     ░           ░     ░  ░]],
+                                             }
 dashboard.section.buttons.val = {
-  dashboard.button("f", "  Find file", ":Telescope find_files <CR>"),
-  dashboard.button("e", "  New file", ":ene <BAR> startinsert <CR>"),
---  dashboard.button("p", "  Find project", ":Telescope projects <CR>"),
-  dashboard.button("r", "  Recently used files", ":Telescope oldfiles <CR>"),
-  dashboard.button("t", "  Find text", ":Telescope live_grep <CR>"),
-  dashboard.button("c", "  Configuration", ":e ~/.config/nvim/init.lua <CR>"),
-  dashboard.button("q", "  Quit Neovim", ":qa<CR>"),
+  dashboard.button("f", "  find file", ":telescope find_files <cr>"),
+  dashboard.button("e", "  new file", ":ene <bar> startinsert <cr>"),
+--  dashboard.button("p", "  find project", ":telescope projects <cr>"),
+  dashboard.button("r", "  recently used files", ":telescope oldfiles <cr>"),
+  dashboard.button("t", "  find text", ":telescope live_grep <cr>"),
+--  dashboard.button("c", "  configuration", ":e ~/.config/nvim/init.lua <cr>"),
+  dashboard.button("q", "  quit neovim", ":qa<cr>"),
 }
 
-local function footer()
--- NOTE: requires the fortune-mod package to work
-  -- local handle = io.popen("fortune")
-  -- local fortune = handle:read("*a")
-  -- handle:close()
-  -- return fortune
-  return "Philiks"
-end
+dashboard.section.footer.val = {
+  [[coding is frustratingly fun (ﾉಥ益ಥ）ﾉ ┻━┻]],
+  [[           -- 🄿 🄷 🄸 🄻 🄸 🄺 🅂 --           ]],
+}
 
-dashboard.section.footer.val = footer()
-
-dashboard.section.footer.opts.hl = "Type"
-dashboard.section.header.opts.hl = "Include"
-dashboard.section.buttons.opts.hl = "Keyword"
+dashboard.section.footer.opts.hl = "type"
+dashboard.section.header.opts.hl = "include"
+dashboard.section.buttons.opts.hl = "keyword"
 
 dashboard.opts.opts.noautocmd = true
--- vim.cmd([[autocmd User AlphaReady echo 'ready']])
+-- vim.cmd([[autocmd user alphaready echo 'ready']])
 alpha.setup(dashboard.opts)
 
