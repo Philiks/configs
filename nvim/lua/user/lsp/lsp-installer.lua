@@ -19,16 +19,19 @@ local opts = {
   capabilities = require("user.lsp.handlers").capabilities,
 }
 
+local sumneko_lua_opts = require("user.lsp.settings.sumneko_lua")
 lspconfig.sumneko_lua.setup {
   on_attach = opts.on_attach,
   capabilities = opts.capabilities,
-  require("user.lsp.settings.sumneko_lua")
+  settings = sumneko_lua_opts.settings,
 }
 
+local jsonls_opts = require("user.lsp.settings.jsonls")
 lspconfig.jsonls.setup {
   on_attach = opts.on_attach,
   capabilities = opts.capabilities,
-  require("user.lsp.settings.jsonls")
+  settings = jsonls_opts.settings,
+  setup = jsonls_opts.settings,
 }
 
 for _, server in ipairs { "tsserver", "jdtls", "html" } do
