@@ -10,6 +10,15 @@ local actions = require "telescope.actions"
 
 telescope.setup {
   defaults = {
+    layout_strategy = 'flex',
+    layout_config = {
+      prompt_position = 'top',
+      horizontal = {
+        mirror = true,
+        preview_cutoff = 100,
+        preview_width = 0.7,
+      },
+    },
 
     prompt_prefix = " ",
     selection_caret = " ",
