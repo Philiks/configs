@@ -10,7 +10,9 @@ This configuration is heavily inspired by [Neovim-from-scratch](https://github.c
 - grep (for [telescope](https://github.com/nvim-telescope/telescope.nvim) `live_grep` command)
 - Git (for [gitsigns](https://github.com/lewis6991/gitsigns.nvim))
 - ESLint an npm [package](https://www.npmjs.com/package/eslint) (for Null-ls [diagnostics](https://github.com/jose-elias-alvarez/null-ls.nvim/tree/main/lua/null-ls/builtins/diagnostics))
+> You must install this package globally using `-g` flag
 - Prettier an npm [package](https://www.npmjs.com/package/prettier) (for Null-ls [formatting](https://github.com/jose-elias-alvarez/null-ls.nvim/tree/main/lua/null-ls/builtins/formatting))
+> You must install this package globally using `-g` flag
 - ctags (for [preservim/tagbar](https://github.com/preservim/tagbar))
 - Node (for [iamcco/markdown-preview](https://github.com/iamcco/markdown-preview.nvim))
 > You could use yarn but you must edit this line in `./lua/user/plugins.lua`:
