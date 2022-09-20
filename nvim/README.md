@@ -267,7 +267,7 @@ List of keybindings that this config use.
 | CmpDocs | `<C-h>` | scroll upwards the documentation |
 | CmpDocs | `<C-l>` | scroll downwards the documentation |
 
-### Completion keymaps
+### GitSigns keymaps
 | Mode | Keymap | Action |
 | :-: | :-: | :- |
 | n | `]c` | go to next hunk |
